@@ -1,7 +1,7 @@
 version: "3"
 services:
     react:
-        image: constwon111/docker-react-app
+        # image: constwon111/docker-react-app
         build:
             context: .
             dockerfile: Dockerfile.dev
