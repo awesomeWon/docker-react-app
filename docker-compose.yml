@@ -1,23 +1,35 @@
+# version: "3"
+# services:
+#     react:
+#         image: constwon111/docker-react-app
+#         build:
+#             context: .
+#             dockerfile: Dockerfile
+#         ports:
+#             - "3000:3000"
+#         volumes:
+#             - /usr/src/app/node_modules
+#             - ./:/usr/src/app
+#         stdin_open: true
+#         mem_limit: 128m
+
+#     # tests:
+#     #     build:
+#     #         context: .
+#     #         dockerfile: Dockerfile.dev
+#     #     volumes:
+#     #         - /usr/src/app/node_modules
+#     #         - ./:/usr/src/app
+#     #     command: ["npm", "run", "test"]
 version: "3"
 services:
     react:
-        image: constwon111/docker-react-app
         build:
             context: .
             dockerfile: Dockerfile
         ports:
-            - "3000:3000"
+            - "80:80"
         volumes:
             - /usr/src/app/node_modules
             - ./:/usr/src/app
         stdin_open: true
-        mem_limit: 128m
-
-    # tests:
-    #     build:
-    #         context: .
-    #         dockerfile: Dockerfile.dev
-    #     volumes:
-    #         - /usr/src/app/node_modules
-    #         - ./:/usr/src/app
-    #     command: ["npm", "run", "test"]
