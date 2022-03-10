@@ -1,10 +1,10 @@
 version: "3"
 services:
     react:
-        # image: constwon111/docker-react-app
-        build:
-            context: .
-            dockerfile: Dockerfile.dev
+        image: constwon111/docker-react-app
+        # build:
+        #     context: .
+        #     dockerfile: Dockerfile.dev
         ports:
             - "3000:3000"
         volumes:
