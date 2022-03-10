@@ -11,8 +11,7 @@ services:
             - /usr/src/app/node_modules
             - ./:/usr/src/app
         stdin_open: true
-
-        # mem_limit: 128m
+        mem_limit: 128m
 
     # tests:
     #     build:
